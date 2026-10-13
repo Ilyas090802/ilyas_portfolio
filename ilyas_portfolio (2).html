@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Ilyas | AI Student</title>
+<style>
+:root{--bg:#07111f;--panel:#101e31;--text:#edf4ff;--muted:#a7b6cc;--accent:#55e6c1;--accent2:#7aa7ff}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 80% 0%,#173257 0,transparent 35%),var(--bg);color:var(--text);line-height:1.6}
+header{position:sticky;top:0;z-index:5;background:#07111fe8;backdrop-filter:blur(12px);border-bottom:1px solid #24334a}
+.nav{max-width:1080px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font-weight:800;letter-spacing:.5px}.logo span{color:var(--accent)}
+nav{display:flex;gap:20px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;font-size:.92rem}nav a:hover{color:var(--accent)}
+main{max-width:1080px;margin:auto;padding:35px 22px 70px}
+.hero{display:grid;grid-template-columns:1.4fr .8fr;align-items:center;gap:40px;padding:70px 0 55px}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.8rem}
+h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.04;letter-spacing:-2px;margin:14px 0}
+h1 span{color:var(--accent)}.intro{color:var(--muted);font-size:1.12rem;max-width:620px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:11px 17px;border-radius:10px;text-decoration:none;font-weight:700;border:1px solid #334762;color:var(--text);background:#12223a;cursor:pointer}
+.btn.primary{background:var(--accent);color:#07111f;border-color:var(--accent)}.btn:hover{transform:translateY(-1px)}
+.profile{border:1px solid #2b405b;background:linear-gradient(145deg,#162944,#0d192a);border-radius:24px;padding:28px;text-align:center;box-shadow:0 25px 70px #0004}
+.avatar{width:112px;height:112px;margin:0 auto 16px;border-radius:30px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#07111f;font-size:2.4rem;font-weight:900}
+.profile h2{margin:6px 0;font-size:1.35rem}.profile p{margin:3px 0;color:var(--muted)}
+.pillrow{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{font-size:.78rem;padding:5px 10px;border:1px solid #344a65;border-radius:99px;color:#dce8f8}
+section{padding:28px 0 20px;scroll-margin-top:80px}.section-head{margin-bottom:20px}.section-head p{color:var(--muted);margin-top:4px}
+h2.section-title{font-size:1.8rem;margin:0;letter-spacing:-.5px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#0e1b2c;border:1px solid #243750;border-radius:16px;padding:21px}
+.card .icon{font-size:1.5rem}.card h3{margin:9px 0 5px}.card p{color:var(--muted);margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.info-list{list-style:none;padding:0;margin:0}.info-list li{padding:10px 0;border-bottom:1px solid #22334a;color:var(--muted)}.info-list strong{color:var(--text);display:inline-block;min-width:110px}
+.project{min-height:170px}.project a{color:var(--accent);text-decoration:none;font-weight:700}
+.contactbox{display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap;background:linear-gradient(110deg,#123044,#152643);border:1px solid #2b4960;padding:25px;border-radius:18px}
+footer{text-align:center;color:#8294ad;padding:30px 10px;border-top:1px solid #203047;font-size:.9rem}
+.note{font-size:.88rem;color:#91a5be;margin-top:14px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:40px}.profile{max-width:420px}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr}nav{gap:11px}.nav{align-items:flex-start;flex-direction:column}h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+  <div class="logo">ILYAS<span>.</span></div>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+<main>
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Aspiring AI Developer</div>
+      <h1>Hi, I'm <span id="heroName">Muhammad Ilyas</span>.</h1>
+      <p class="intro">An Artificial Intelligence student at Pak-Austria Fachhochschule, learning to turn ideas into useful technology. I'm building my skills in programming, AI, and creative problem-solving.</p>
+      <div class="actions"><a class="btn primary" href="#projects">Explore My Projects ↗</a><a class="btn" href="#contact">Contact Me</a></div>
+      <p class="note">A personal portfolio website — make it your own by editing the details in the HTML file.</p>
+    </div>
+    <aside class="profile">
+      <div class="avatar" id="initials">MI</div>
+      <h2 id="cardName">Muhammad Ilyas</h2>
+      <p>AI Student</p><p>Pak-Austria Fachhochschule</p>
+      <div class="pillrow"><span class="pill">C++</span><span class="pill">Python</span><span class="pill">Artificial Intelligence</span></div>
+    </aside>
+  </div>
+
+  <section id="about">
+    <div class="section-head"><div class="eyebrow">A little about me</div><h2 class="section-title">About Me</h2><p>Curious mind. Consistent learner. Future AI professional.</p></div>
+    <div class="about">
+      <div class="card"><h3>My Story</h3><p>I'm currently in my first semester of Artificial Intelligence. I enjoy learning how software works and exploring how AI can solve real-world problems. My goal is to keep learning, build practical projects, and grow as a developer.</p></div>
+      <div class="card"><h3>Quick Information</h3><ul class="info-list">
+        <li><strong>Name</strong> Muhammad Ilyas</li><li><strong>Field</strong> Artificial Intelligence</li><li><strong>Institute</strong> Pak-Austria Fachhochschule</li><li><strong>Current focus</strong> C++, Python & AI projects</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-head"><div class="eyebrow">My learning journey</div><h2 class="section-title">Education</h2></div>
+    <div class="card"><div class="icon">🎓</div><h3>Artificial Intelligence — First Semester</h3><p>Pak-Austria Fachhochschule</p><p class="note">Currently learning programming fundamentals, C++, applied physics, and the foundations needed for AI development.</p></div>
+  </section>
+
+  <section id="skills">
+    <div class="section-head"><div class="eyebrow">What I'm learning</div><h2 class="section-title">Skills & Interests</h2><p>This section can grow as you gain more experience.</p></div>
+    <div class="grid">
+      <div class="card"><div class="icon">💻</div><h3>C++ Programming</h3><p>Learning variables, input/output, conditions, loops, and problem-solving fundamentals.</p></div>
+      <div class="card"><div class="icon">🐍</div><h3>Python</h3><p>Exploring Python for automation, computer vision, and AI-based applications.</p></div>
+      <div class="card"><div class="icon">🤖</div><h3>Artificial Intelligence</h3><p>Interested in computer vision and building useful AI tools that respond to real-world needs.</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-head"><div class="eyebrow">Things I'm building</div><h2 class="section-title">My Projects</h2><p>Add your project links, screenshots, and progress here.</p></div>
+    <div class="grid">
+      <div class="card project"><div class="icon">📷</div><h3>AI Exam Hall Camera Alert</h3><p>A learning project exploring camera-based object detection and alerts for possible mobile-phone presence.</p></div>
+      <div class="card project"><div class="icon">💵</div><h3>Pakistani Currency Recognition</h3><p>An idea for recognizing Pakistani banknotes with a webcam and announcing the detected denomination.</p></div>
+      <div class="card project"><div class="icon">✨</div><h3>Future AI Projects</h3><p>More experiments and projects will be added as I continue learning.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contactbox"><div><div class="eyebrow">Let's connect</div><h2 class="section-title">Have an idea or opportunity?</h2><p style="color:var(--muted);margin-bottom:0">Add your email or social links here so people can contact you.</p></div>
+      <a class="btn primary" href="mailto:your.email@example.com">Email Me ↗</a>
+    </div>
+    <p class="note">Before publishing, replace <strong>your.email@example.com</strong> with your real email and add only the contact details you want to share publicly.</p>
+  </section>
+</main>
+<footer>© <span id="year"></span> Muhammad Ilyas · Personal Portfolio</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
